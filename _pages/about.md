@@ -4,10 +4,6 @@ title: home
 permalink: /
 nav_order: 1
 
-profile:
-  align: right
-  image: corl_logo.png
-  image_circular: false
 
 announcements:
   enabled: false
