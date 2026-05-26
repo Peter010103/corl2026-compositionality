@@ -9,6 +9,7 @@ nav_order: 2
 
 {% assign speakers = site.data.speakers %}
 {% for speaker in speakers %}
+
 <div class="speaker-card">
   <div class="speaker-photo">
     {% if speaker.photo %}

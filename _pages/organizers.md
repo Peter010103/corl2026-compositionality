@@ -8,6 +8,7 @@ nav_order: 4
 <div class="organizers-grid">
 
 {% for organizer in site.data.organizers %}
+
 <div class="organizer-card">
   <div class="organizer-photo">
     {% if organizer.photo %}

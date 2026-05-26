@@ -14,6 +14,7 @@ We invite submissions of original research contributions on the topic of **Compo
 We encourage submissions on topics including (but not limited to):
 
 **Building compositional systems:**
+
 - Modular and hierarchical robot learning architectures
 - Skill discovery, composition, and reuse
 - Task and motion planning with composable primitives
@@ -22,12 +23,14 @@ We encourage submissions on topics including (but not limited to):
 - Object-centric and relational representations
 
 **Evaluating compositional generalization:**
+
 - Benchmarks for compositional generalization in robotics
 - Sim-to-real transfer as a compositional generalization probe
 - Formal notions of novelty, structure, and compositionality
 - Metrics and evaluation protocols
 
 **Cross-disciplinary perspectives:**
+
 - Compositional semantics in language and its relevance to robotics
 - Hierarchical and structured representations in cognitive science and neuroscience
 - Modular reuse in biological motor systems
@@ -46,12 +49,12 @@ We encourage submissions on topics including (but not limited to):
 
 ### Important Dates
 
-| | |
-|---|---|
-| Submission deadline | TBA |
-| Notification of acceptance | TBA |
-| Camera-ready deadline | TBA |
-| Workshop date | CoRL 2026 |
+|                            |           |
+| -------------------------- | --------- |
+| Submission deadline        | TBA       |
+| Notification of acceptance | TBA       |
+| Camera-ready deadline      | TBA       |
+| Workshop date              | CoRL 2026 |
 
 ---
 

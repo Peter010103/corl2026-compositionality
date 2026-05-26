@@ -12,6 +12,7 @@ Accepted papers will be listed here after the review process is complete.
 <div class="papers-list">
 
 {% for paper in site.data.accepted_papers %}
+
 <div class="paper-card">
   <h3 class="paper-title">{{ paper.title }}</h3>
   <p class="paper-authors">{{ paper.authors }}</p>

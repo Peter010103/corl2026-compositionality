@@ -9,14 +9,14 @@ The workshop is a **half-day event**. All times are local to the workshop venue.
 
 <div class="program-table-wrapper">
 
-| Time | Session | Details |
-|------|---------|---------|
-| 8:30 – 8:40 | **Opening** | Welcome by organizers |
-| 8:40 – 10:00 | **Spotlight Talks 1–3** | 20 min + 5 min Q&A per speaker (both junior and senior researchers) |
-| 10:00 – 10:30 | **Lightning Talks** | 1–2 min per accepted poster (depending on submission count) |
-| 10:30 – 11:00 | **Coffee Break & Posters** | Curated pool of accepted posters |
-| 11:00 – 11:30 | **Spotlight Talk 4** | 20 min + 5 min Q&A — ideally the most cross-disciplinary speaker |
-| 11:30 – 12:30 | **Oxford-Style Debate** | 4 speakers, 2 per team (drawn from spotlight speakers), 2 topics moderated by organizers, with interactive audience voting |
+| Time          | Session                    | Details                                                                                                                    |
+| ------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 8:30 – 8:40   | **Opening**                | Welcome by organizers                                                                                                      |
+| 8:40 – 10:00  | **Spotlight Talks 1–3**    | 20 min + 5 min Q&A per speaker (both junior and senior researchers)                                                        |
+| 10:00 – 10:30 | **Lightning Talks**        | 1–2 min per accepted poster (depending on submission count)                                                                |
+| 10:30 – 11:00 | **Coffee Break & Posters** | Curated pool of accepted posters                                                                                           |
+| 11:00 – 11:30 | **Spotlight Talk 4**       | 20 min + 5 min Q&A — ideally the most cross-disciplinary speaker                                                           |
+| 11:30 – 12:30 | **Oxford-Style Debate**    | 4 speakers, 2 per team (drawn from spotlight speakers), 2 topics moderated by organizers, with interactive audience voting |
 
 </div>
 

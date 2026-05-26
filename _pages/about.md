@@ -29,7 +29,7 @@ The dominant trend in robot learning has been to pursue generalization by scalin
 
 Therefore, the question is less about whether deep networks compose and more about **what they compose over**. This workshop examines compositionality under the premise that closing this gap calls for deliberate, designed structure, and convenes researchers to ask what such structure is.
 
-Specifically, we explore *Compositionality for Robot Intelligence*: robot capabilities that arise from structured combinations of reusable parts&mdash;skills, representations, policies&mdash;such that behavior in novel settings emerges from, and can be explained by, the components and their interaction structure.
+Specifically, we explore _Compositionality for Robot Intelligence_: robot capabilities that arise from structured combinations of reusable parts&mdash;skills, representations, policies&mdash;such that behavior in novel settings emerges from, and can be explained by, the components and their interaction structure.
 
 ---
 
@@ -38,10 +38,12 @@ Specifically, we explore *Compositionality for Robot Intelligence*: robot capabi
 The overarching question we want to open for discussion is: **how do we build and evaluate compositional generalization in robot behavior?** We propose to organize the conversation around two threads:
 
 **Thread 1: How do we build compositional generalization into a system?**
+
 - Where does compositional structure come from? The world, the task, the information processing, or the observed behavior?
 - Given an answer to the above: what are the right components, interfaces, and interaction structure? Latents? States? Language? Are hierarchies needed to achieve composition?
 
 **Thread 2: How do we evaluate compositional generalization?**
+
 - What makes a situation truly novel rather than just an interpolation of the training data?
 - Given a notion of novelty, what is a valid measure of compositionality?
 
