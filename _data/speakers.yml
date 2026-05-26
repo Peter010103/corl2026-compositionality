@@ -1,0 +1,12 @@
+# Invited speakers for the workshop
+# Fields: name, affiliation, website, photo (filename in assets/img/speakers/), talk_title, topics, confirmed
+
+- name: "Speaker TBA"
+  affiliation: "Affiliation TBA"
+  website: ""
+  photo: ""
+  talk_title: ""
+  topics:
+    - compositionality
+    - robot learning
+  confirmed: false
