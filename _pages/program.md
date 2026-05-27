@@ -9,16 +9,47 @@ nav_order: 3
 The workshop is a **half-day event**. All times are local to the workshop venue.
 
 <div class="program-table-wrapper">
-
-| Time          | Session                    | Details                                                                                                                    |
-| ------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| 8:30 – 8:40   | **Opening**                | Welcome by organizers                                                                                                      |
-| 8:40 – 10:00  | **Spotlight Talks 1–3**    | 20 min + 5 min Q&A per speaker (both junior and senior researchers)                                                        |
-| 10:00 – 10:30 | **Lightning Talks**        | 1–2 min per accepted poster (depending on submission count)                                                                |
-| 10:30 – 11:00 | **Coffee Break & Posters** | Curated pool of accepted posters                                                                                           |
-| 11:00 – 11:30 | **Spotlight Talk 4**       | 20 min + 5 min Q&A — ideally the most cross-disciplinary speaker                                                           |
-| 11:30 – 12:30 | **Oxford-Style Debate**    | 4 speakers, 2 per team (drawn from spotlight speakers), 2 topics moderated by organizers, with interactive audience voting |
-
+<table class="program-table">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Session</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:30 &ndash; 8:40</td>
+      <td><strong>Opening</strong></td>
+      <td>Welcome by organizers</td>
+    </tr>
+    <tr>
+      <td>8:40 &ndash; 10:00</td>
+      <td><strong>Spotlight Talks 1&ndash;3</strong></td>
+      <td>20 min + 5 min Q&amp;A per speaker (both junior and senior researchers)</td>
+    </tr>
+    <tr>
+      <td>10:00 &ndash; 10:30</td>
+      <td><strong>Lightning Talks</strong></td>
+      <td>1&ndash;2 min per accepted poster (depending on submission count)</td>
+    </tr>
+    <tr>
+      <td>10:30 &ndash; 11:00</td>
+      <td><strong>Coffee Break &amp; Posters</strong></td>
+      <td>Curated pool of accepted posters</td>
+    </tr>
+    <tr>
+      <td>11:00 &ndash; 11:30</td>
+      <td><strong>Spotlight Talk 4</strong></td>
+      <td>20 min + 5 min Q&amp;A &mdash; ideally the most cross-disciplinary speaker</td>
+    </tr>
+    <tr>
+      <td>11:30 &ndash; 12:30</td>
+      <td><strong>Oxford-Style Debate</strong></td>
+      <td>4 speakers, 2 per team (drawn from spotlight speakers), 2 topics moderated by organizers, with interactive audience voting</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 ---
@@ -46,22 +77,29 @@ See the [Accepted Papers](/corl2026-compositionality/accepted-papers/) page for 
   overflow-x: auto;
   margin: 1.5rem 0;
 }
-.program-table-wrapper table {
+.program-table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.95rem;
 }
-.program-table-wrapper th {
-  background: #f5f5f5;
-  padding: 0.6rem 1rem;
+.program-table th {
+  background: var(--global-code-bg-color, #f5f5f5);
+  padding: 0.7rem 1rem;
   text-align: left;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid var(--global-divider-color, #ddd);
+  font-weight: 600;
 }
-.program-table-wrapper td {
-  padding: 0.6rem 1rem;
-  border-bottom: 1px solid #eee;
+.program-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--global-divider-color, #eee);
   vertical-align: top;
 }
-.program-table-wrapper tr:hover td {
-  background: #fafafa;
+.program-table td:first-child {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--global-text-color-light, #555);
+}
+.program-table tbody tr:hover td {
+  background: var(--global-hover-color, #fafafa);
 }
 </style>

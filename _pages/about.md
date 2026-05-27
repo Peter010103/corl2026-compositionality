@@ -1,9 +1,9 @@
 ---
 layout: about
-title: home
+title: Home
 permalink: /
 subtitle: Half-day workshop organized in conjunction with CoRL 2026
-nav: false
+nav: true
 nav_order: 1
 
 
@@ -110,7 +110,7 @@ selected_papers: false
 
 ### Aims and Scope
 
-The 1st Workshop on **Compositionality for Robot Intelligence** (CRI) at **CoRL 2026** examines how robots can compose reusable parts &mdash; skills, representations, policies &mdash; into behavior that generalizes to genuinely novel situations.
+The 1st Workshop on **Compositionality for Robot Intelligence** at **CoRL 2026** examines how robots can compose reusable parts &mdash; skills, representations, policies &mdash; into behavior that generalizes to genuinely novel situations.
 
 Current robot-learning systems scale data and model size to recover representations that recombine within the training distribution, but they struggle with **compositional generalization** in the stronger sense of qualitative extrapolation. The open question is less *whether* deep networks compose and more **what they compose over**.
 
