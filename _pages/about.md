@@ -19,15 +19,16 @@ selected_papers: false
   .post-header { text-align: center; }
   .post-header .post-title { text-align: center; }
   .post-header .desc { text-align: center; font-size: 1.1rem; margin-top: 0.5rem; }
-  .post > article { text-align: center; }
-  .post > article h1,
-  .post > article h2,
-  .post > article h3,
-  .post > article h4 { text-align: center; }
-  .post > article ul,
-  .post > article ol { display: inline-block; text-align: left; }
-  .post > article p,
-  .post > article > h3 { margin-top: 1.6rem; margin-bottom: 1.2rem; line-height: 1.7; }
+
+  /* Body content: left-aligned prose, with section headings centered. */
+  .post > article { text-align: left; }
+  .post > article > h3 {
+    text-align: center;
+    margin-top: 2.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.35rem;
+  }
+  .post > article p { line-height: 1.7; margin: 0.9rem 0; }
 
   .hero-figure {
     width: 100%;
@@ -42,6 +43,20 @@ selected_papers: false
     font-size: 0.95rem;
     margin: 1rem 0 2rem;
   }
+
+  .announcements {
+    margin: 1rem 0 2rem;
+    border-left: 3px solid var(--global-divider-color, #e0e0e0);
+    padding-left: 1rem;
+  }
+  .announcements .item { display: flex; gap: 0.8rem; padding: 0.5rem 0; }
+  .announcements .item .date {
+    flex: 0 0 7rem;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light, #666);
+    font-variant-numeric: tabular-nums;
+  }
+  .announcements .item .body { font-size: 0.95rem; line-height: 1.5; }
 
   .key-dates {
     display: grid;
@@ -80,48 +95,50 @@ selected_papers: false
 
 <div class="hero-figure">Figure placeholder</div>
 
+### Announcements
+
+<div class="announcements">
+  <div class="item">
+    <div class="date">TBA</div>
+    <div class="body">Call for papers will open soon &mdash; check back for submission instructions.</div>
+  </div>
+  <div class="item">
+    <div class="date">TBA</div>
+    <div class="body">Invited speakers and program details to be announced.</div>
+  </div>
+</div>
+
+---
+
 ### Aims and Scope
 
-The 1st Workshop on **Compositionality for Robot Intelligence** (CRI), to be held within the **Conference on Robot Learning (CoRL) 2026**, is the first CoRL workshop devoted to the structures, mechanisms, and evaluations that let robots compose reusable parts into novel, generalizable behavior.
+The 1st Workshop on **Compositionality for Robot Intelligence** (CRI) at **CoRL 2026** examines how robots can compose reusable parts &mdash; skills, representations, policies &mdash; into behavior that generalizes to genuinely novel situations.
 
-In recent years, we have witnessed the rapid scaling of data and model size in robot learning, producing systems that are arguably compositional in a weak sense: they recover lower-dimensional representations that reproduce the training distribution through structured combination. Yet these systems still struggle with **compositional generalization** in the stronger sense of qualitative extrapolation to genuinely novel situations. The question, therefore, is less about whether deep networks compose and more about **what they compose over**.
+Current robot-learning systems scale data and model size to recover representations that recombine within the training distribution, but they struggle with **compositional generalization** in the stronger sense of qualitative extrapolation. The open question is less *whether* deep networks compose and more **what they compose over**.
 
-This workshop examines compositionality under the premise that closing this gap calls for deliberate, designed structure. We explore _Compositionality for Robot Intelligence_: robot capabilities that arise from structured combinations of reusable parts&mdash;skills, representations, policies&mdash;such that behavior in novel settings emerges from, and can be explained by, the components and their interaction structure.
-
-The aim of the workshop is to provide researchers from robot learning, evaluation, and neighbouring disciplines a place to share experiences, surface open problems, and contribute to the discussion about how to build and measure compositional generalization in robot behavior.
-
-Researchers willing to participate should submit a contribution through the workshop submission page. Accepted papers will be presented as lightning talks and posters.
+The workshop convenes researchers from robot learning, evaluation, and neighbouring disciplines (language, cognitive science, biology) to discuss what designed structure is needed to close this gap, and how to measure when it has been achieved. The half-day program features invited spotlight talks, lightning talks from accepted papers, a poster session, and an **Oxford-style debate** on a central open question.
 
 ---
 
 ### Topics
 
-The workshop is organized around two main threads:
+The workshop is organized around two threads:
 
-**Thread 1 &mdash; Building compositional generalization into a system**
+**Thread 1 &mdash; Building compositional generalization**
 
-- Sources of compositional structure: world, task, information processing, or behavior
-- Components and interfaces: latents, states, language, skills, policies
-- Hierarchical and modular architectures for robot learning
+- Where compositional structure comes from: world, task, information processing, or behavior
+- Components and interfaces: latents, states, language, skills, policies, hierarchies
+- Modular, hierarchical, and foundation-model-based architectures
 - Task and motion planning as a compositional substrate
-- Foundation-model-based systems and prompted recomposition
 - Sim-to-real as a probe for structural reuse
 
 **Thread 2 &mdash; Evaluating compositional generalization**
 
-- Defining novelty beyond interpolation of the training distribution
+- What makes a situation novel rather than an interpolation of training data
 - Formal measures of compositionality in learned systems
 - Benchmark design for compositional generalization
-- Empirical methodologies for diagnosing failure modes of composition
-- Insights from compositional semantics in language, cognitive science, and biology
-
----
-
-### Format
-
-The workshop is a **half-day** event featuring invited spotlight talks, lightning talks from accepted paper contributors, a poster session, and an **Oxford-style debate** on a central open question in compositional robot intelligence.
-
-See the [Program](/corl2026-compositionality/program/) page for the full schedule and the [Call for Papers](/corl2026-compositionality/call-for-papers/) page for submission details.
+- Diagnostics for failure modes of composition
+- Insights from compositional semantics, cognitive science, and biology
 
 ---
 
