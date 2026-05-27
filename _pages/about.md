@@ -3,7 +3,7 @@ layout: about
 title: Home
 permalink: /
 subtitle: Half-day workshop organized in conjunction with CoRL 2026
-nav: true
+nav: false
 nav_order: 1
 
 
