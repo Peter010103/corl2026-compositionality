@@ -2,6 +2,7 @@
 layout: about
 title: home
 permalink: /
+subtitle: 1st Workshop on Compositionality for Robot Intelligence
 nav: true
 nav_order: 1
 
@@ -14,7 +15,18 @@ social: false
 selected_papers: false
 ---
 
-## 1st Workshop on Compositionality for Robot Intelligence
+<style>
+  .post-header { text-align: center; }
+  .post-header .post-title { text-align: center; }
+  .post-header .desc { text-align: center; font-size: 1.1rem; margin-top: 0.5rem; }
+  .post > article { text-align: center; }
+  .post > article h1,
+  .post > article h2,
+  .post > article h3,
+  .post > article h4 { text-align: center; }
+  .post > article ul,
+  .post > article ol { display: inline-block; text-align: left; }
+</style>
 
 **CoRL 2026 &mdash; Half-day Workshop**
 
