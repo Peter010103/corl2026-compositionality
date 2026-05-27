@@ -3,7 +3,7 @@ layout: about
 title: home
 permalink: /
 subtitle: Half-day workshop organized in conjunction with CoRL 2026
-nav: true
+nav: false
 nav_order: 1
 
 
@@ -92,8 +92,6 @@ selected_papers: false
   .home-organizers .org-name { font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
   .home-organizers .org-aff { font-size: 0.78rem; color: var(--global-text-color-light, #666); margin-top: 0.25rem; line-height: 1.4; }
 </style>
-
-<div class="hero-figure">Figure placeholder</div>
 
 ### Announcements
 
