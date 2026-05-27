@@ -2,6 +2,7 @@
 layout: page
 title: Accepted Papers
 permalink: /accepted-papers/
+nav: true
 nav_order: 6
 ---
 

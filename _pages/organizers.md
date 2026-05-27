@@ -2,6 +2,7 @@
 layout: page
 title: Organizers
 permalink: /organizers/
+nav: true
 nav_order: 4
 ---
 
