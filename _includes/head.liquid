@@ -181,10 +181,10 @@
   /* Slimmer nav links. */
   #navbar .nav-link { padding-top: 0.3rem !important; padding-bottom: 0.3rem !important; font-size: 0.9rem; }
 
-  /* Make the navbar span the full page width (not the constrained container). */
-  #navbar > .container { max-width: 100% !important; padding-left: 2rem; padding-right: 2rem; }
+  /* Navbar background spans full page width via .fixed-top; the inner
+     .container stays at text width so nav items align with body content. */
 
-  /* Right-align nav items. */
+  /* Right-align nav items within the text-width container. */
   #navbar .navbar-collapse-main { justify-content: flex-end; }
   #navbar .navbar-menu-list { margin-left: auto !important; }
 
