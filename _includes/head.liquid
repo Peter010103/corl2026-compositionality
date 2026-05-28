@@ -168,7 +168,7 @@
     opacity: 1 !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
@@ -179,17 +179,25 @@
     padding-bottom: 0.4rem;
     align-items: flex-end;
   }
-  #navbar .container { align-items: flex-end; }
-  html[data-theme="dark"] #navbar.navbar {
+  #navbar .container {
+    align-items: flex-end;
+  }
+  html[data-theme='dark'] #navbar.navbar {
     background-color: var(--global-bg-color, #1c1c1d) !important;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   }
 
   /* Hide the brand text so the navbar isn't dominated by the long site title. */
-  #navbar .navbar-brand { display: none !important; }
+  #navbar .navbar-brand {
+    display: none !important;
+  }
 
   /* Slimmer nav links. */
-  #navbar .nav-link { padding-top: 0.3rem !important; padding-bottom: 0.3rem !important; font-size: 0.9rem; }
+  #navbar .nav-link {
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+    font-size: 0.9rem;
+  }
 
   /* Navbar background spans full page width via .fixed-top; the inner
      .container stays at text width so nav items align with body content. */
@@ -197,18 +205,29 @@
   /* Right-align nav items within the text-width container.
      On expanded navbars Bootstrap sets the collapse div to flex-basis:auto,
      so the ul sits left. Push the whole collapse div to the right instead. */
-  #navbar .navbar-collapse-main { margin-left: auto !important; justify-content: flex-end !important; }
-  #navbar .navbar-menu-list { margin-left: auto !important; }
+  #navbar .navbar-collapse-main {
+    margin-left: auto !important;
+    justify-content: flex-end !important;
+  }
+  #navbar .navbar-menu-list {
+    margin-left: auto !important;
+  }
 
   /* Offset body content for the taller fixed navbar. */
-  body.fixed-top-nav { padding-top: 4.5rem; }
+  body.fixed-top-nav {
+    padding-top: 4.5rem;
+  }
 
   /* Add breathing room between fixed navbar and page content site-wide. */
   body > .container,
   body > main > .container,
   main > .container,
-  .post-header { padding-top: 2.5rem; }
-  .post-header { margin-top: 1rem; }
+  .post-header {
+    padding-top: 2.5rem;
+  }
+  .post-header {
+    margin-top: 1rem;
+  }
 
   /* Extra vertical space above section titles site-wide. */
   .post > article h2,

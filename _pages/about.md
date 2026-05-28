@@ -6,7 +6,6 @@ subtitle: Half-day workshop organized in conjunction with CoRL 2026
 nav: false
 nav_order: 1
 
-
 announcements:
   enabled: false
 latest_posts:
@@ -112,7 +111,7 @@ selected_papers: false
 
 The 1st Workshop on **Compositionality for Robot Intelligence** at **CoRL 2026** examines how robots can compose reusable parts &mdash; skills, representations, policies &mdash; into behavior that generalizes to genuinely novel situations.
 
-Current robot-learning systems scale data and model size to recover representations that recombine within the training distribution, but they struggle with **compositional generalization** in the stronger sense of qualitative extrapolation. The open question is less *whether* deep networks compose and more **what they compose over**.
+Current robot-learning systems scale data and model size to recover representations that recombine within the training distribution, but they struggle with **compositional generalization** in the stronger sense of qualitative extrapolation. The open question is less _whether_ deep networks compose and more **what they compose over**.
 
 The workshop convenes researchers from robot learning, evaluation, and neighbouring disciplines (language, cognitive science, biology) to discuss what designed structure is needed to close this gap, and how to measure when it has been achieved. The half-day program features invited spotlight talks, lightning talks from accepted papers, a poster session, and an **Oxford-style debate** on a central open question.
 
