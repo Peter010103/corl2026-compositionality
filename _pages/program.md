@@ -83,7 +83,7 @@ See the [Accepted Papers](/corl2026-compositionality/accepted-papers/) page for 
   font-size: 0.95rem;
 }
 .program-table th {
-  background: var(--global-code-bg-color, #f5f5f5);
+  background: #fbe7da;
   padding: 0.7rem 1rem;
   text-align: left;
   border-bottom: 2px solid var(--global-divider-color, #ddd);
@@ -100,6 +100,6 @@ See the [Accepted Papers](/corl2026-compositionality/accepted-papers/) page for 
   color: var(--global-text-color-light, #555);
 }
 .program-table tbody tr:hover td {
-  background: var(--global-hover-color, #fafafa);
+  background: #fdf3ec;
 }
 </style>

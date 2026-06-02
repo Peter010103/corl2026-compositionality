@@ -75,7 +75,8 @@ nav_order: 2
   font-size: 1.4rem;
   font-weight: bold;
 }
-.speaker-info h3 { margin: 0 0 0.2rem; font-size: 1rem; }
+.speaker-info h3 { margin: 0 0 0.2rem; font-size: 1rem; color: #a8430a; }
+.speaker-info h3 a { color: #a8430a; }
 .speaker-affiliation { margin: 0 0 0.3rem; font-size: 0.85rem; color: var(--global-text-color-light, #666); }
 .speaker-talk { margin: 0 0 0.4rem; font-size: 0.85rem; }
 .topic-tag {

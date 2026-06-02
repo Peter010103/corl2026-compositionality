@@ -39,8 +39,6 @@ nav_order: 4
 
 </div>
 
----
-
 ### Contact
 
 For any questions regarding the workshop, please reach out to the organizers at the email addresses listed above or contact us via the [CoRL 2026 workshop page](https://www.corl.org/program/workshops).
@@ -51,6 +49,7 @@ For any questions regarding the workshop, please reach out to the organizers at 
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 .organizer-card {
   display: flex;
@@ -81,7 +80,8 @@ For any questions regarding the workshop, please reach out to the organizers at 
   font-weight: bold;
   flex-shrink: 0;
 }
-.organizer-info h3 { margin: 0 0 0.2rem; font-size: 1rem; }
+.organizer-info h3 { margin: 0 0 0.2rem; font-size: 1rem; color: #a8430a; }
+.organizer-info h3 a { color: #a8430a; }
 .organizer-affiliation { margin: 0 0 0.2rem; font-size: 0.85rem; color: var(--global-text-color-light, #666); }
 .organizer-email { margin: 0 0 0.4rem; font-size: 0.8rem; }
 .organizer-bio { margin: 0.4rem 0 0; font-size: 0.82rem; line-height: 1.5; }
