@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://proroklab.org/corl2026-compositionality/sitemap.xml
+Sitemap: https://www.proroklab.org/corl2026-compositionality/sitemap.xml
