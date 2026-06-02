@@ -2,10 +2,10 @@
 # Fields: name, affiliation, website, photo (filename in assets/img/speakers/), talk_title, topics, confirmed
 
 - name: "Lerrel Pinto"
-  affiliation: "New York University"
+  affiliation: "Meta Superintelligence Labs & NYU"
   website: "https://www.lerrelpinto.com/"
   photo: "lerrel-pinto.jpg"
-  talk_title: ""
+  talk_title: "Compositional robot learning by watching humans"
   topics:
     - compositionality
     - robot learning
@@ -13,9 +13,9 @@
 
 - name: "Deborah M. Gordon"
   affiliation: "Stanford University"
-  website: "https://gordon.stanford.edu/"
+  website: "https://biology.stanford.edu/people/deborah-m-gordon"
   photo: "deborah-gordon.jpg"
-  talk_title: ""
+  talk_title: "The ecology of collective behavior"
   topics:
     - collective behavior
     - compositionality
@@ -25,7 +25,7 @@
   affiliation: "Massachusetts Institute of Technology"
   website: "https://zardini.mit.edu/"
   photo: "gioele-zardini.jpg"
-  talk_title: ""
+  talk_title: "Compositional design and operation of society-critical autonomous systems"
   topics:
     - compositionality
     - robot learning

@@ -61,7 +61,7 @@ We encourage submissions on topics including (but not limited to):
 
 ### Diversity and Inclusion
 
-We are committed to building a workshop that reflects the diversity of the robotics research community. We actively seek contributions and participants across career stages, genders, geographic regions, and disciplinary backgrounds. We will distribute the call for papers through relevant mailing lists in robotics and machine learning, with particular attention to groups underrepresented at CoRL (South America, Africa, Southeast Asia).
+We are committed to building a workshop that reflects the diversity of the robotics research community. We actively seek contributions and participants across career stages, genders, geographic regions, and disciplinary backgrounds. We will distribute the call for papers through relevant mailing lists in robotics and machine learning, with particular attention to groups underrepresented at CoRL.
 
 ---
 
