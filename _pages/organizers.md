@@ -41,7 +41,7 @@ nav_order: 4
 
 ### Contact
 
-[es2121@cam.ac.uk](mailto:es2121@cam.ac.uk)
+For any questions regarding the workshop, please reach out to [es2121@cam.ac.uk](mailto:es2121@cam.ac.uk).
 
 <style>
 .organizers-grid {
