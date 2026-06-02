@@ -67,12 +67,12 @@ Accepted papers will be listed here after the review process is complete.
   display: inline-block;
   margin-right: 0.5rem;
   padding: 0.2rem 0.6rem;
-  border: 1px solid #7b68ee;
+  border: 1px solid #e8590c;
   border-radius: 4px;
   font-size: 0.78rem;
-  color: #7b68ee;
+  color: #e8590c;
   text-decoration: none;
 }
-.paper-link:hover { background: #7b68ee; color: white; }
+.paper-link:hover { background: #e8590c; color: white; }
 details summary { cursor: pointer; font-size: 0.85rem; color: #555; }
 </style>

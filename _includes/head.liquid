@@ -160,6 +160,23 @@
 
 <!-- Site-local overrides -->
 <style>
+  /* CoRL 2026 orange accent. Overrides the gem's default purple theme tokens.
+     Loaded after main.css so these win. */
+  :root {
+    --global-theme-color: #e8590c;
+    --global-hover-color: #b84a0a;
+    --global-hover-text-color: #ffffff;
+    --global-back-to-top-bg-color: #e8590c;
+    --global-back-to-top-text-color: #ffffff;
+    --global-distill-app-color: #e8590c;
+  }
+  html[data-theme='dark'] {
+    --global-theme-color: #ff7a33;
+    --global-hover-color: #ff7a33;
+    --global-back-to-top-bg-color: #ff7a33;
+    --global-distill-app-color: #ff7a33;
+  }
+
   /* Solid navbar (never transparent) with subtle shadow, anchored to the
      very top of the viewport and spanning its full width. Nav text sits at
      the bottom edge for a taller header feel. */

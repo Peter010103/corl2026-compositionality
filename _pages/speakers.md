@@ -31,17 +31,8 @@ nav_order: 2
     {% if speaker.talk_title %}
       <p class="speaker-talk"><em>{{ speaker.talk_title }}</em></p>
     {% endif %}
-    {% if speaker.topics %}
-      <p class="speaker-topics">
-        {% for topic in speaker.topics %}
-          <span class="topic-tag">{{ topic }}</span>
-        {% endfor %}
-      </p>
-    {% endif %}
     {% if speaker.confirmed == false %}
       <span class="status-badge tentative">Tentative</span>
-    {% else %}
-      <span class="status-badge confirmed">Confirmed</span>
     {% endif %}
   </div>
 </div>
@@ -76,7 +67,7 @@ nav_order: 2
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #7b68ee;
+  background: #e8590c;
   color: white;
   display: flex;
   align-items: center;
