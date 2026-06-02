@@ -40,7 +40,7 @@ We encourage submissions on topics including (but not limited to):
 
 ### Submission Guidelines
 
-- **Format:** Papers should be submitted as a PDF in the **CoRL 2026 paper format** (4–8 pages, excluding references and appendices).
+- **Format:** Papers should be submitted as a PDF in the **CoRL 2026 paper format** (up to 4 pages, excluding references).
 - **Review process:** Double-blind peer review. Submissions must be anonymized.
 - **Originality:** We prioritize novel work not published at any other venue. Work under review elsewhere is also welcome.
 - **Presentation:** Accepted papers will give a **1–2 minute lightning talk** before the poster session, and will present a **poster** during the coffee break.
