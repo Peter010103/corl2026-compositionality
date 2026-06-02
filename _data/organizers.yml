@@ -8,18 +8,18 @@
   photo: "eduardo-sebastian.jpg"
   bio: ""
 
-- name: "Heedo Woo"
-  affiliation: "Department of Computer Science and Technology, University of Cambridge, UK"
-  email: ""
-  website: ""
-  photo: "peter-woo.jpg"
-  bio: ""
-
 - name: "Antonio Marino"
   affiliation: "Department of Computer Science and Technology, University of Cambridge, UK"
   email: ""
   website: ""
   photo: "antonio-marino.jpg"
+  bio: ""
+
+- name: "Heedo Woo"
+  affiliation: "Department of Computer Science and Technology, University of Cambridge, UK"
+  email: ""
+  website: ""
+  photo: "peter-woo.jpg"
   bio: ""
 
 - name: "Vito Mengers"
