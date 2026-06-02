@@ -41,7 +41,7 @@ nav_order: 4
 
 ### Contact
 
-For any questions regarding the workshop, please reach out to the organizers at the email addresses listed above or contact us via the [CoRL 2026 workshop page](https://www.corl.org/program/workshops).
+[es2121@cam.ac.uk](mailto:es2121@cam.ac.uk)
 
 <style>
 .organizers-grid {
