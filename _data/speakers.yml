@@ -1,12 +1,32 @@
 # Invited speakers for the workshop
 # Fields: name, affiliation, website, photo (filename in assets/img/speakers/), talk_title, topics, confirmed
 
-- name: "Speaker TBA"
-  affiliation: "Affiliation TBA"
-  website: ""
-  photo: ""
+- name: "Lerrel Pinto"
+  affiliation: "New York University"
+  website: "https://www.lerrelpinto.com/"
+  photo: "lerrel-pinto.jpg"
   talk_title: ""
   topics:
     - compositionality
     - robot learning
-  confirmed: false
+  confirmed: true
+
+- name: "Deborah M. Gordon"
+  affiliation: "Stanford University"
+  website: "https://gordon.stanford.edu/"
+  photo: "deborah-gordon.jpg"
+  talk_title: ""
+  topics:
+    - collective behavior
+    - compositionality
+  confirmed: true
+
+- name: "Gioele Zardini"
+  affiliation: "Massachusetts Institute of Technology"
+  website: "https://zardini.mit.edu/"
+  photo: "gioele-zardini.jpg"
+  talk_title: ""
+  topics:
+    - compositionality
+    - robot learning
+  confirmed: true

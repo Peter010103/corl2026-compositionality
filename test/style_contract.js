@@ -61,7 +61,26 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
+// Site-local overrides explicitly allowed in this starter. These are the only
+// no-fork mechanism the gem provides for site-wide head/footer customization
+// (custom CSS injection, footer logo). Tracked under `.al-folio-overrides.yml`.
+const allowedOverrides = new Set(["_includes/head.liquid", "_includes/footer.liquid"]);
+
+const isForbiddenInsideAllowedDir = (dir) => {
+  if (!exists(dir)) return false;
+  const entries = fs.readdirSync(path.join(root, dir), { withFileTypes: true }).map((e) => path.posix.join(dir, e.name));
+  return entries.some((p) => !allowedOverrides.has(p));
+};
+
 for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+  if (forbiddenPath === "_includes") {
+    if (isForbiddenInsideAllowedDir(forbiddenPath)) {
+      failures.push(
+        `Starter \`_includes\` may only contain known overrides (${[...allowedOverrides].join(", ")}); move other component logic to the corresponding gem.`
+      );
+    }
+    continue;
+  }
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }
