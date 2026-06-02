@@ -88,7 +88,7 @@ selected_papers: false
     background: #5b7fa6; color: #fff; display: flex; align-items: center; justify-content: center;
     font-weight: 600; font-size: 1.1rem;
   }
-  .home-organizers .org-name { font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
+  .home-organizers .org-name { font-weight: 400; font-size: 0.95rem; line-height: 1.3; }
   .home-organizers .org-aff { font-size: 0.78rem; color: var(--global-text-color-light, #666); margin-top: 0.25rem; line-height: 1.4; }
 </style>
 
