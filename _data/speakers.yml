@@ -30,3 +30,13 @@
     - compositionality
     - robot learning
   confirmed: true
+
+- name: "Jiayuan Mao"
+  affiliation: "Massachusetts Institute of Technology"
+  website: "https://jiayuanm.com/"
+  photo: "jiayuan-mao.jpg"
+  talk_title: "Language-Guided Compositional Learning for Adaptive Robot Skills"
+  topics:
+    - compositionality
+    - robot learning
+  confirmed: true
