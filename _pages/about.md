@@ -186,3 +186,9 @@ The workshop is organized around two threads:
 </div>
 
 See the [Organizers](/corl2026-compositionality/organizers/) page for full bios and contact information.
+
+---
+
+### Code of Conduct
+
+We adopt the [CoRL code of conduct](https://www.corl.org). You can **confidentially** contact [Eduardo Sebastian](mailto:es2121@cam.ac.uk) for any concerns during the workshop.
