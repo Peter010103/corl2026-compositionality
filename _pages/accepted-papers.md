@@ -36,7 +36,7 @@ Accepted papers will be listed here after the review process is complete.
 {% else %}
 
 <div class="coming-soon-box">
-  <p>&#128203; Paper decisions will be announced after the review process. Check back soon!</p>
+  <p>Paper decisions will be announced after the review process. Check back soon.</p>
 </div>
 
 {% endif %}

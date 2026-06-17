@@ -43,7 +43,7 @@ We encourage submissions on topics including (but not limited to):
 - **Format:** Papers should be submitted as a PDF in the **CoRL 2026 paper format** (up to 4 pages, excluding references).
 - **Review process:** Double-blind peer review. Submissions must be anonymized.
 - **Originality:** We prioritize novel work not published at any other venue. Work under review elsewhere is also welcome.
-- **Presentation:** Accepted papers will give a **1–2 minute lightning talk** before the poster session, and will present a **poster** during the coffee break.
+- **Presentation:** Accepted papers will give a **1-2 minute lightning talk** before the poster session, and will present a **poster** during the coffee break.
 - **Submission portal:** TBA
 
 ---
@@ -67,4 +67,4 @@ We are committed to building a workshop that reflects the diversity of the robot
 
 ### Code of Conduct
 
-We adopt and link to the [CoRL code of conduct](https://www.corl.org). One named organizer is designated as a confidential point of contact for any concerns during the workshop.
+We are committed to a respectful, inclusive, and constructive workshop environment for all participants. One named organizer is designated as a confidential point of contact for any concerns during the workshop.

@@ -6,6 +6,14 @@
   website: "https://www.lerrelpinto.com/"
   photo: "lerrel-pinto.jpg"
   talk_title: "Compositional robot learning by watching humans"
+  bio: >
+    Lerrel Pinto is a roboticist at Meta Superintelligence Labs and runs the
+    General Robotics & AI Lab (GRAIL) at NYU, where his work focuses on robot
+    learning, representation learning, and reinforcement learning for adaptable,
+    affordable robots. He earned his PhD in Robotics from Carnegie Mellon
+    University. He is also co-founder and CEO of Assured Robot Intelligence
+    (acquired by Meta) and a recipient of the Sloan, Packard, and CIFAR
+    Fellowships.
   topics:
     - compositionality
     - robot learning
@@ -16,6 +24,14 @@
   website: "https://biology.stanford.edu/people/deborah-m-gordon"
   photo: "deborah-gordon.jpg"
   talk_title: "The ecology of collective behavior"
+  bio: >
+    Deborah M. Gordon is the Paul S. and Billie Achilles Professor of
+    Environmental Biology at Stanford University, where she studies how ant
+    colonies coordinate without central control through networks of simple local
+    interactions, and how those networks evolve as environments change. She
+    earned her PhD in Zoology from Duke University. Her long-running field
+    studies include harvester ants in Arizona, invasive Argentine ants in
+    California, and arboreal ant networks in Central America.
   topics:
     - collective behavior
     - compositionality
@@ -26,16 +42,33 @@
   website: "https://zardini.mit.edu/"
   photo: "gioele-zardini.jpg"
   talk_title: "Compositional design and operation of society-critical autonomous systems"
+  bio: >
+    Gioele Zardini is the Rudge (1948) and Nancy Allen Assistant Professor at
+    MIT, where he leads the Zardini Lab within the Laboratory for Information
+    and Decision Systems. His research develops computational and algorithmic
+    tools, drawing on optimization, control theory, game theory, and applied
+    category theory, for the compositional design of complex autonomous systems,
+    spanning mobility, logistics, aerospace, and energy. He earned his Doctor of
+    Science from ETH Zurich. He is a recipient of the 2025 DARPA Young Faculty
+    Award and the ETH Silver Medal for his doctoral thesis.
   topics:
     - compositionality
     - robot learning
   confirmed: true
 
 - name: "Jiayuan Mao"
-  affiliation: "Massachusetts Institute of Technology"
+  affiliation: "Amazon Frontier AI & Robotics, incoming Assistant Professor, University of Pennsylvania"
   website: "https://jiayuanm.com/"
   photo: "jiayuan-mao.jpg"
   talk_title: "Language-Guided Compositional Learning for Adaptive Robot Skills"
+  bio: >
+    Jiayuan Mao is a Member of Technical Staff at Amazon Frontier AI & Robotics
+    and will join the University of Pennsylvania as an Assistant Professor. She
+    earned her PhD from MIT. Her research builds machines that learn and compose
+    concepts: properties, relations, skills, and rules from experience,
+    combining neural grounding with symbolic structure for compositionally
+    generalizable learning, reasoning, and planning. She was named a Rising Star
+    in EECS and in Generative AI in 2024.
   topics:
     - compositionality
     - robot learning

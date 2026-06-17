@@ -92,50 +92,100 @@ selected_papers: false
   .home-organizers .org-aff { font-size: 0.78rem; color: var(--global-text-color-light, #666); margin-top: 0.25rem; line-height: 1.4; }
 </style>
 
-### Announcements
+<section class="workshop-hero" aria-labelledby="workshop-title">
+  <div>
+    <div class="workshop-kicker">CoRL 2026 half-day workshop</div>
+    <h1 id="workshop-title">Compositionality for Robot Intelligence</h1>
+    <p>How robots can compose reusable skills, representations, and policies into behavior that generalizes beyond training.</p>
+  </div>
+</section>
 
-<div class="announcements">
-  <div class="item">
-    <div class="date">TBA</div>
-    <div class="body">Call for papers will open soon &mdash; check back for submission instructions.</div>
-  </div>
-  <div class="item">
-    <div class="date">TBA</div>
-    <div class="body">Invited speakers and program details to be announced.</div>
-  </div>
+<div class="intro-grid">
+  <section class="intro-panel">
+    <h3>Announcements</h3>
+    <div class="announcements">
+      <div class="item">
+        <div class="date">TBA</div>
+        <div class="body">Call for papers will open soon. Check back for submission instructions.</div>
+      </div>
+      <div class="item">
+        <div class="date">TBA</div>
+        <div class="body">Invited speakers and program details to be announced.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro-panel">
+    <h3>Aims and Scope</h3>
+    <div class="workshop-content-card workshop-aims-card">
+      <p>The 1st Workshop on <strong>Compositionality for Robot Intelligence</strong> at <strong>CoRL 2026</strong> examines how robots can compose reusable parts: skills, representations, and policies into behavior that generalizes to genuinely novel situations.</p>
+
+      <p>Current robot-learning systems scale data and model size to recover representations that recombine within the training distribution, but they struggle with <strong>compositional generalization</strong> in the stronger sense of qualitative extrapolation. The open question is less <em>whether</em> deep networks compose and more <strong>what they compose over</strong>.</p>
+
+      <p>The workshop convenes researchers from robot learning, evaluation, and neighbouring disciplines (language, cognitive science, biology) to discuss what designed structure is needed to close this gap, and how to measure when it has been achieved. The half-day program features invited spotlight talks, lightning talks from accepted papers, a poster session, and an <strong>Oxford-style debate</strong> on a central open question.</p>
+    </div>
+
+  </section>
 </div>
-
----
-
-### Aims and Scope
-
-The 1st Workshop on **Compositionality for Robot Intelligence** at **CoRL 2026** examines how robots can compose reusable parts &mdash; skills, representations, policies &mdash; into behavior that generalizes to genuinely novel situations.
-
-Current robot-learning systems scale data and model size to recover representations that recombine within the training distribution, but they struggle with **compositional generalization** in the stronger sense of qualitative extrapolation. The open question is less _whether_ deep networks compose and more **what they compose over**.
-
-The workshop convenes researchers from robot learning, evaluation, and neighbouring disciplines (language, cognitive science, biology) to discuss what designed structure is needed to close this gap, and how to measure when it has been achieved. The half-day program features invited spotlight talks, lightning talks from accepted papers, a poster session, and an **Oxford-style debate** on a central open question.
 
 ---
 
 ### Topics
 
-The workshop is organized around two threads:
+<div class="topic-grid">
+  <div class="workshop-content-card topic-card">
+    <div class="topic-label">Thread 1</div>
+    <h4>Building compositional generalization</h4>
+    <ul>
+      <li>Origins of compositional structure in world, task, information processing, or behavior</li>
+      <li>Components and interfaces for latents, states, language, skills, policies, and hierarchies</li>
+      <li>Modular, hierarchical, and foundation-model-based robot-learning architectures</li>
+      <li>Task and motion planning as a compositional substrate</li>
+      <li>Sim-to-real transfer as a probe for structural reuse</li>
+    </ul>
+  </div>
 
-**Thread 1 &mdash; Building compositional generalization**
+  <div class="workshop-content-card topic-card">
+    <div class="topic-label">Thread 2</div>
+    <h4>Evaluating compositional generalization</h4>
+    <ul>
+      <li>Distinguishing genuinely novel situations from interpolation of training data</li>
+      <li>Formal measures of compositionality in learned systems</li>
+      <li>Benchmarks for testing compositional generalization</li>
+      <li>Diagnostics for failure modes of composition</li>
+      <li>Perspectives from compositional semantics, cognitive science, and biology</li>
+    </ul>
+  </div>
+</div>
 
-- Where compositional structure comes from: world, task, information processing, or behavior
-- Components and interfaces: latents, states, language, skills, policies, hierarchies
-- Modular, hierarchical, and foundation-model-based architectures
-- Task and motion planning as a compositional substrate
-- Sim-to-real as a probe for structural reuse
+---
 
-**Thread 2 &mdash; Evaluating compositional generalization**
+### Invited Speakers
 
-- What makes a situation novel rather than an interpolation of training data
-- Formal measures of compositionality in learned systems
-- Benchmark design for compositional generalization
-- Diagnostics for failure modes of composition
-- Insights from compositional semantics, cognitive science, and biology
+<div class="home-speakers">
+{% for speaker in site.data.speakers %}
+  <div class="home-speaker-card">
+    {% if speaker.photo and speaker.photo != "" %}
+      <img class="home-speaker-photo" src="{{ speaker.photo | prepend: '/assets/img/speakers/' | relative_url }}" alt="{{ speaker.name }}" />
+    {% else %}
+      {% assign parts = speaker.name | split: ' ' %}
+      <div class="home-speaker-placeholder">{{ parts[0] | slice: 0 }}{{ parts.last | slice: 0 }}</div>
+    {% endif %}
+    <div class="home-speaker-name">
+      {% if speaker.website and speaker.website != "" %}
+        <a href="{{ speaker.website }}" target="_blank">{{ speaker.name }}</a>
+      {% else %}
+        {{ speaker.name }}
+      {% endif %}
+    </div>
+    <div class="home-speaker-aff">{{ speaker.affiliation }}</div>
+  </div>
+{% endfor %}
+</div>
+
+<p class="home-section-link">
+  Full speaker bios and talk titles are available on the <a href="{{ '/speakers/' | relative_url }}">Speakers page</a>.
+</p>
 
 ---
 
@@ -185,10 +235,6 @@ The workshop is organized around two threads:
 {% endfor %}
 </div>
 
-See the [Organizers](/corl2026-compositionality/organizers/) page for full bios and contact information.
-
----
-
 ### Code of Conduct
 
-We adopt the [CoRL code of conduct](https://www.corl.org). You can **confidentially** contact [Eduardo Sebastian](mailto:es2121@cam.ac.uk) for any concerns during the workshop.
+We are committed to a respectful, inclusive, and constructive workshop environment for all participants. You can **confidentially** contact [Eduardo Sebastian](mailto:es2121@cam.ac.uk) for any concerns during the workshop.

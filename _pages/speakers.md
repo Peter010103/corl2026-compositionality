@@ -31,6 +31,9 @@ nav_order: 2
     {% if speaker.talk_title %}
       <p class="speaker-talk"><em>{{ speaker.talk_title }}</em></p>
     {% endif %}
+    {% if speaker.bio %}
+      <p class="speaker-bio">{{ speaker.bio }}</p>
+    {% endif %}
     {% if speaker.confirmed == false %}
       <span class="status-badge tentative">Tentative</span>
     {% endif %}
@@ -43,29 +46,31 @@ nav_order: 2
 <style>
 .speakers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+  margin-top: 2.25rem;
 }
 .speaker-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
   align-items: flex-start;
-  gap: 1rem;
-  padding: 1.2rem;
-  border: 1px solid var(--global-divider-color, #e0e0e0);
-  border-radius: 8px;
-  background: var(--global-bg-color, #fff);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  gap: 1.15rem;
+  min-height: 100%;
+  padding: 1.45rem;
+  border: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 14px 36px rgba(104, 54, 20, 0.07);
 }
 .speaker-photo img {
-  width: 80px;
-  height: 80px;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   object-fit: cover;
 }
 .speaker-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   background: #e8590c;
   color: white;
@@ -75,10 +80,25 @@ nav_order: 2
   font-size: 1.4rem;
   font-weight: bold;
 }
-.speaker-info h3 { margin: 0 0 0.2rem; font-size: 1rem; color: #a8430a; }
+.speaker-info h3 { margin: 0 0 0.25rem; font-size: 1.2rem; line-height: 1.1; color: #a8430a; }
 .speaker-info h3 a { color: #a8430a; }
-.speaker-affiliation { margin: 0 0 0.3rem; font-size: 0.85rem; color: var(--global-text-color-light, #666); }
-.speaker-talk { margin: 0 0 0.4rem; font-size: 0.85rem; }
+.speaker-affiliation {
+  margin: 0 0 0.65rem;
+  font-size: 0.83rem;
+  color: var(--global-text-color-light, #666);
+  line-height: 1.35;
+}
+.speaker-talk {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.speaker-bio {
+  margin: 0;
+  color: var(--global-text-color-light, #555);
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
 .topic-tag {
   display: inline-block;
   background: #f0f0f0;
@@ -97,4 +117,13 @@ nav_order: 2
 }
 .status-badge.confirmed { background: #e6f4ea; color: #2d7a2d; }
 .status-badge.tentative { background: #fff8e1; color: #8a6400; }
+@media (max-width: 900px) {
+  .speakers-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .speaker-card {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+}
 </style>
