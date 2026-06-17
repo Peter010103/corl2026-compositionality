@@ -8,6 +8,7 @@
   --workshop-line: #eadbd0;
   --workshop-soft: #f7ede6;
   --workshop-radius: 14px;
+  --workshop-radius-large: 24px;
   --workshop-shadow: 0 18px 55px rgba(104, 54, 20, 0.1);
 }
 
@@ -182,7 +183,7 @@ a:focus {
   margin: 0 0 clamp(4.25rem, 7vw, 5.5rem);
   overflow: hidden;
   position: relative;
-  border-radius: calc(var(--workshop-radius) + 10px);
+  border-radius: var(--workshop-radius-large);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 250, 246, 0.78)),
     radial-gradient(circle at 90% 8%, rgba(232, 89, 12, 0.22), transparent 16rem);
