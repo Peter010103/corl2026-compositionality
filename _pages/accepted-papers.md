@@ -6,8 +6,6 @@ nav: true
 nav_order: 6
 ---
 
-Accepted papers will be listed here after the review process is complete.
-
 {% if site.data.accepted_papers %}
 
 <div class="papers-list">
@@ -35,44 +33,17 @@ Accepted papers will be listed here after the review process is complete.
 
 {% else %}
 
-<div class="coming-soon-box">
-  <p>Paper decisions will be announced after the review process. Check back soon.</p>
+<div class="ws-empty-state">
+  <div class="ws-empty-icon" aria-hidden="true">
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
+      <rect x="14" y="10" width="36" height="48" rx="6" fill="none" stroke="#e6e9ef" stroke-width="2"/>
+      <rect x="22" y="22" width="20" height="3" rx="1.5" fill="rgba(232,89,12,0.08)"/>
+      <rect x="22" y="30" width="20" height="3" rx="1.5" fill="rgba(232,89,12,0.08)"/>
+      <rect x="22" y="38" width="14" height="3" rx="1.5" fill="rgba(232,89,12,0.08)"/>
+    </svg>
+  </div>
+  <h3>Accepted papers coming soon</h3>
+  <p>Paper decisions will be announced after the review process. Check back soon, or visit the <a href="{{ '/call-for-papers/' | relative_url }}">Call for Papers</a> page for submission details.</p>
 </div>
 
 {% endif %}
-
-<style>
-.coming-soon-box {
-  text-align: center;
-  padding: 3rem 2rem;
-  border: 2px dashed #ccc;
-  border-radius: 8px;
-  color: #888;
-  font-size: 1.1rem;
-  margin-top: 2rem;
-}
-.papers-list { margin-top: 2rem; }
-.paper-card {
-  padding: 1.2rem 1.4rem;
-  border: 1px solid var(--global-divider-color, #e0e0e0);
-  border-radius: 8px;
-  margin-bottom: 1.2rem;
-  background: var(--global-bg-color, #fff);
-}
-.paper-title { margin: 0 0 0.3rem; font-size: 1rem; }
-.paper-authors { margin: 0 0 0.5rem; font-size: 0.85rem; color: var(--global-text-color-light, #555); }
-.paper-abstract { font-size: 0.85rem; margin-top: 0.5rem; }
-.paper-links { margin-top: 0.6rem; }
-.paper-link {
-  display: inline-block;
-  margin-right: 0.5rem;
-  padding: 0.2rem 0.6rem;
-  border: 1px solid #e8590c;
-  border-radius: 4px;
-  font-size: 0.78rem;
-  color: #e8590c;
-  text-decoration: none;
-}
-.paper-link:hover { background: #e8590c; color: white; }
-details summary { cursor: pointer; font-size: 0.85rem; color: #555; }
-</style>

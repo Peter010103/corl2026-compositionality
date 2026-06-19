@@ -160,82 +160,135 @@
 
 <!-- Site-local overrides -->
 <style>
-  /* CoRL 2026 orange accent. Overrides the gem's default purple theme tokens.
-     Loaded after main.css so these win. */
+  /* CoRL 2026 · Compositionality for Robot Intelligence
+     Sleek modern academic palette: cool off-white surfaces, off-black slate
+     ink, single CoRL-orange accent. Overrides the gem's default theme tokens.
+     Loaded before workshop.css; workshop.css owns the component layer. */
   :root {
     --global-theme-color: #e8590c;
-    --global-hover-color: #b84a0a;
+    --global-hover-color: #f97316;
     --global-hover-text-color: #ffffff;
     --global-back-to-top-bg-color: #e8590c;
     --global-back-to-top-text-color: #ffffff;
     --global-distill-app-color: #e8590c;
   }
-  html[data-theme='dark'] {
-    --global-theme-color: #ff7a33;
-    --global-hover-color: #ff7a33;
-    --global-back-to-top-bg-color: #ff7a33;
-    --global-distill-app-color: #ff7a33;
-  }
 
-  /* Solid navbar (never transparent) with subtle shadow, anchored to the
-     very top of the viewport and spanning its full width. Nav text sits at
-     the bottom edge for a taller header feel. */
+  /* Pill navbar: floats at the top, centered, matching page content width.
+     Glass surface with a hairline accent edge along the bottom of the pill. */
   #navbar.navbar {
-    background-color: var(--global-bg-color, #fff) !important;
-    opacity: 1 !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 0.75rem !important;
+    width: min(calc(100% - 1.5rem), 1080px) !important;
+    max-width: none !important;
     min-height: 0;
-    padding-top: 1.4rem;
-    padding-bottom: 0.4rem;
-    align-items: flex-end;
+    padding: 0.3rem 0.45rem !important;
+    background-color: rgba(252, 253, 254, 0.82) !important;
+    opacity: 1 !important;
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+    border: 1px solid rgba(15, 23, 42, 0.07) !important;
+    border-radius: 999px !important;
+    transform: translateX(-50%);
+  }
+  #navbar.navbar::before {
+    display: none !important;
   }
   #navbar .container {
-    align-items: flex-end;
-  }
-  html[data-theme='dark'] #navbar.navbar {
-    background-color: var(--global-bg-color, #1c1c1d) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    max-width: none !important;
+    padding: 0 !important;
+    align-items: center;
+    position: relative;
   }
 
-  /* Hide the brand text so the navbar isn't dominated by the long site title. */
-  #navbar .navbar-brand {
+  /* Hide the gem-rendered full site-title brand on subpages; the compact
+     ws-brand lockup (injected below) is the single brand in the navbar. */
+  #navbar .navbar-brand.title {
     display: none !important;
   }
 
-  /* Slimmer nav links. */
-  #navbar .nav-link {
-    padding-top: 0.3rem !important;
-    padding-bottom: 0.3rem !important;
-    font-size: 0.9rem;
+  /* Compact brand lockup: a small accent square + short workshop title. */
+  #navbar .navbar-brand.ws-brand {
+    display: flex !important;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.4rem 0.7rem !important;
+    margin: 0 !important;
+    margin-right: 0.6rem !important;
+    font-family: "IBM Plex Mono", "IBM Plex Sans", monospace;
+    font-size: 0.78rem !important;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--global-text-color, #0b1220) !important;
+    white-space: nowrap;
+    border-radius: 999px;
+    transition: color 160ms ease, background-color 160ms ease;
+  }
+  #navbar .navbar-brand.ws-brand::before {
+    content: "";
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 2px;
+    background: var(--global-theme-color);
+    transform: rotate(45deg);
+    transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  #navbar .navbar-brand.ws-brand:hover {
+    color: var(--global-theme-color) !important;
+    text-decoration: none;
+    background: rgba(232, 89, 12, 0.06);
+  }
+  #navbar .navbar-brand.ws-brand:hover::before {
+    transform: rotate(135deg);
   }
 
-  /* Navbar background spans full page width via .fixed-top; the inner
-     .container stays at text width so nav items align with body content. */
+  /* Nav links: pill hover surface, no underline (pill navbar). */
+  #navbar .nav-link {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+    font-size: 0.88rem !important;
+    color: var(--global-text-color-light, #5b6573) !important;
+    border-radius: 999px !important;
+    background: transparent !important;
+    position: relative;
+    transition:
+      color 160ms ease,
+      background-color 160ms ease;
+  }
+  #navbar .nav-link:hover,
+  #navbar .nav-link:focus {
+    color: var(--global-theme-color) !important;
+    background: rgba(232, 89, 12, 0.07) !important;
+  }
+  #navbar .nav-link.active {
+    color: #fff !important;
+    background: var(--global-theme-color) !important;
+    font-weight: 600;
+  }
+  #navbar .nav-link.active::after {
+    display: none !important;
+  }
 
-  /* Right-align nav items within the text-width container.
-     On expanded navbars Bootstrap sets the collapse div to flex-basis:auto,
-     so the ul sits left. Push the whole collapse div to the right instead. */
+  /* Right-align nav items within the text-width container. */
   #navbar .navbar-collapse-main {
     margin-left: auto !important;
     justify-content: flex-end !important;
   }
   #navbar .navbar-menu-list {
     margin-left: auto !important;
+    gap: 0.35rem !important;
   }
 
-  /* Offset body content for the taller fixed navbar. */
+  /* Offset body content for the floating pill navbar. */
   body.fixed-top-nav {
-    padding-top: 3.6rem;
+    padding-top: 4.75rem;
   }
 
-  /* Add breathing room between fixed navbar and page content site-wide. */
+  /* Breathing room between fixed navbar and page content site-wide. */
   body > .container,
   body > main > .container,
   main > .container,
@@ -265,3 +318,26 @@
   }
 </style>
 <link rel="stylesheet" href="{{ '/assets/css/workshop.css' | relative_url | bust_file_cache }}">
+
+<!-- Inject a compact brand lockup into the gem-owned navbar. -->
+<script>
+  (function () {
+    function addBrand() {
+      var nav = document.getElementById('navbar');
+      if (!nav) return;
+      var container = nav.querySelector('.container');
+      if (!container || container.querySelector('.navbar-brand.ws-brand')) return;
+      var a = document.createElement('a');
+      a.className = 'navbar-brand ws-brand';
+      a.href = '{{ "/" | relative_url }}';
+      a.setAttribute('aria-label', 'Compositionality for Robot Intelligence — home');
+      a.textContent = 'CoRL 2026 · Compositionality';
+      container.insertBefore(a, container.firstChild);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', addBrand);
+    } else {
+      addBrand();
+    }
+  })();
+</script>

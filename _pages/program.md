@@ -6,7 +6,9 @@ nav: true
 nav_order: 3
 ---
 
-The workshop is a **half-day event**. All times are local to the workshop venue.
+<div class="ws-page-intro">
+  <p markdown="span">The workshop is a **half-day event**. All times are local to the workshop venue.</p>
+</div>
 
 <div class="program-table-wrapper">
 <table class="program-table">
@@ -56,50 +58,21 @@ The workshop is a **half-day event**. All times are local to the workshop venue.
 
 ### Oxford-Style Debate
 
-A highlight of the workshop is a structured Oxford-style debate on a central open question in compositional robot intelligence. The format features:
-
-- **4 debaters** (2 per team), drawn from the spotlight speakers
-- **2 debate topics**, moderated by the organizers
-- **Interactive audience voting** to engage participants and decide which team wins each round
-
-The debate is designed to be followable without prior CoRL background, with clear opposing positions, minimal jargon, and structured turns so that researchers from cognitive science, linguistics, and biology can engage substantively.
+<div class="workshop-content-card">
+  <p>A highlight of the workshop is a structured Oxford-style debate on a central open question in compositional robot intelligence. The format features:</p>
+  <ul>
+    <li markdown="span">**4 debaters** (2 per team), drawn from the spotlight speakers</li>
+    <li markdown="span">**2 debate topics**, moderated by the organizers</li>
+    <li markdown="span">**Interactive audience voting** to engage participants and decide which team wins each round</li>
+  </ul>
+  <p>The debate is designed to be followable without prior CoRL background, with clear opposing positions, minimal jargon, and structured turns so that researchers from cognitive science, linguistics, and biology can engage substantively.</p>
+</div>
 
 ---
 
 ### Poster Session
 
-Accepted papers will present their contributions as posters during the coffee break. Authors will also give a short lightning talk before the break to allow the audience to identify posters of interest.
-
-See the [Accepted Papers](/corl2026-compositionality/accepted-papers/) page for the full list of contributions.
-
-<style>
-.program-table-wrapper {
-  overflow-x: auto;
-  margin: 1.5rem 0;
-}
-.program-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
-.program-table th {
-  background: #fbe7da;
-  padding: 0.7rem 1rem;
-  text-align: left;
-  border-bottom: 2px solid var(--global-divider-color, #ddd);
-  font-weight: 600;
-}
-.program-table td {
-  padding: 0.7rem 1rem;
-  border-bottom: 1px solid var(--global-divider-color, #eee);
-  vertical-align: top;
-}
-.program-table td:first-child {
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-  color: var(--global-text-color-light, #555);
-}
-.program-table tbody tr:hover td {
-  background: #fdf3ec;
-}
-</style>
+<div class="workshop-content-card">
+  <p markdown="span">Accepted papers will present their contributions as posters during the coffee break. Authors will also give a short lightning talk before the break to allow the audience to identify posters of interest.</p>
+  <p markdown="span">See the [Accepted Papers]({{ '/accepted-papers/' | relative_url }}) page for the full list of contributions.</p>
+</div>

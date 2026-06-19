@@ -14,93 +14,56 @@ social: false
 selected_papers: false
 ---
 
-<style>
-  .post-header { text-align: center; }
-  .post-header .post-title { text-align: center; }
-  .post-header .desc { text-align: center; font-size: 1.1rem; margin-top: 0.5rem; }
-
-  /* Body content: left-aligned prose, with section headings centered. */
-  .post > article { text-align: left; }
-  .post > article > h3 {
-    text-align: center;
-    margin-top: 2.2rem;
-    margin-bottom: 1.2rem;
-    font-size: 1.35rem;
-  }
-  .post > article p { line-height: 1.7; margin: 0.9rem 0; }
-
-  .hero-figure {
-    width: 100%;
-    aspect-ratio: 16 / 6;
-    border: 1px dashed var(--global-divider-color, #d0d0d0);
-    border-radius: 8px;
-    background: var(--global-code-bg-color, #f6f6f6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--global-text-color-light, #888);
-    font-size: 0.95rem;
-    margin: 1rem 0 2rem;
-  }
-
-  .announcements {
-    margin: 1rem 0 2rem;
-    border-left: 3px solid var(--global-divider-color, #e0e0e0);
-    padding-left: 1rem;
-  }
-  .announcements .item { display: flex; gap: 0.8rem; padding: 0.5rem 0; }
-  .announcements .item .date {
-    flex: 0 0 7rem;
-    font-size: 0.85rem;
-    color: var(--global-text-color-light, #666);
-    font-variant-numeric: tabular-nums;
-  }
-  .announcements .item .body { font-size: 0.95rem; line-height: 1.5; }
-
-  .key-dates {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
-    margin: 1.5rem 0 2rem;
-    text-align: center;
-  }
-  .key-dates .date-card {
-    padding: 1rem;
-    border: 1px solid var(--global-divider-color, #e0e0e0);
-    border-radius: 8px;
-  }
-  .key-dates .date-label { font-size: 0.85rem; color: var(--global-text-color-light, #666); text-transform: uppercase; letter-spacing: 0.05em; }
-  .key-dates .date-value { font-weight: 600; margin-top: 0.4rem; font-size: 1rem; }
-
-  .home-organizers {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1.25rem;
-    margin: 1.5rem 0 2rem;
-    text-align: center;
-  }
-  .home-organizers .org-card { display: flex; flex-direction: column; align-items: center; }
-  .home-organizers .org-photo,
-  .home-organizers .org-placeholder {
-    width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin-bottom: 0.6rem;
-  }
-  .home-organizers .org-placeholder {
-    background: #5b7fa6; color: #fff; display: flex; align-items: center; justify-content: center;
-    font-weight: 600; font-size: 1.1rem;
-  }
-  .home-organizers .org-name { font-weight: 400; font-size: 0.95rem; line-height: 1.3; }
-  .home-organizers .org-aff { font-size: 0.78rem; color: var(--global-text-color-light, #666); margin-top: 0.25rem; line-height: 1.4; }
-</style>
-
-<section class="workshop-hero" aria-labelledby="workshop-title">
-  <div>
-    <div class="workshop-kicker">CoRL 2026 half-day workshop</div>
+<section class="workshop-hero ws-reveal" aria-labelledby="workshop-title">
+  <div class="ws-hero-copy">
+    <div class="workshop-kicker">CoRL 2026 · HALF-DAY WORKSHOP</div>
     <h1 id="workshop-title">Compositionality for Robot Intelligence</h1>
     <p>How robots can compose reusable skills, representations, and policies into behavior that generalizes beyond training.</p>
+    <div class="ws-cta-row">
+      <a class="ws-btn ws-btn-primary" href="{{ '/call-for-papers/' | relative_url }}">Call for Papers</a>
+      <a class="ws-btn ws-btn-ghost" href="{{ '/speakers/' | relative_url }}">Speakers</a>
+    </div>
+  </div>
+
+  <div class="ws-hero-visual" aria-hidden="true">
+    <div class="ws-hero-motif">
+    <svg viewBox="0 0 320 320" role="img" xmlns="http://www.w3.org/2000/svg">
+      <!-- outer frame: the "whole" -->
+      <rect x="8" y="8" width="304" height="304" rx="22" ry="22"
+            fill="none" stroke="#e6e9ef" stroke-width="1.5"/>
+
+      <!-- compositional modules tiling the frame -->
+      <rect x="28" y="28" width="120" height="84" rx="14" ry="14"
+            fill="#e8590c" fill-opacity="0.92"/>
+      <rect x="28" y="124" width="56" height="56" rx="12" ry="12"
+            fill="none" stroke="rgba(232,89,12,0.24)" stroke-width="1.5"/>
+      <rect x="92" y="124" width="56" height="56" rx="12" ry="12"
+            fill="rgba(232,89,12,0.08)" stroke="rgba(232,89,12,0.24)" stroke-width="1.5"/>
+      <rect x="28" y="192" width="120" height="100" rx="14" ry="14"
+            fill="none" stroke="#e6e9ef" stroke-width="1.5"/>
+
+      <rect x="160" y="28" width="132" height="56" rx="12" ry="12"
+            fill="none" stroke="#e6e9ef" stroke-width="1.5"/>
+      <rect x="160" y="96" width="62" height="84" rx="14" ry="14"
+            fill="rgba(232,89,12,0.08)" stroke="rgba(232,89,12,0.24)" stroke-width="1.5"/>
+      <rect x="230" y="96" width="62" height="84" rx="14" ry="14"
+            fill="none" stroke="rgba(232,89,12,0.24)" stroke-width="1.5"/>
+      <rect x="160" y="192" width="62" height="100" rx="14" ry="14"
+            fill="none" stroke="#e6e9ef" stroke-width="1.5"/>
+      <rect x="230" y="192" width="62" height="44" rx="12" ry="12"
+            fill="#e8590c" fill-opacity="0.92"/>
+      <rect x="230" y="248" width="62" height="44" rx="12" ry="12"
+            fill="none" stroke="#e6e9ef" stroke-width="1.5"/>
+    </svg>
+    </div>
+    <span class="ws-hero-tag">
+      <img src="{{ '/assets/img/organizers/corl_2026_logo.png' | relative_url }}" alt="" />
+      CoRL 2026
+    </span>
   </div>
 </section>
 
-<div class="intro-grid">
+<div class="intro-grid ws-reveal">
   <section class="intro-panel">
     <h3>Announcements</h3>
     <div class="announcements">
@@ -124,7 +87,6 @@ selected_papers: false
 
       <p>The workshop convenes researchers from robot learning, evaluation, and neighbouring disciplines (language, cognitive science, biology) to discuss what designed structure is needed to close this gap, and how to measure when it has been achieved. The half-day program features invited spotlight talks, lightning talks from accepted papers, a poster session, and an <strong>Oxford-style debate</strong> on a central open question.</p>
     </div>
-
   </section>
 </div>
 
@@ -132,7 +94,7 @@ selected_papers: false
 
 ### Topics
 
-<div class="topic-grid">
+<div class="topic-grid ws-reveal">
   <div class="workshop-content-card topic-card">
     <div class="topic-label">Thread 1</div>
     <h4>Building compositional generalization</h4>
@@ -162,25 +124,25 @@ selected_papers: false
 
 ### Invited Speakers
 
-<div class="home-speakers">
-{% for speaker in site.data.speakers %}
-  <div class="home-speaker-card">
-    {% if speaker.photo and speaker.photo != "" %}
-      <img class="home-speaker-photo" src="{{ speaker.photo | prepend: '/assets/img/speakers/' | relative_url }}" alt="{{ speaker.name }}" />
-    {% else %}
-      {% assign parts = speaker.name | split: ' ' %}
-      <div class="home-speaker-placeholder">{{ parts[0] | slice: 0 }}{{ parts.last | slice: 0 }}</div>
-    {% endif %}
-    <div class="home-speaker-name">
-      {% if speaker.website and speaker.website != "" %}
-        <a href="{{ speaker.website }}" target="_blank">{{ speaker.name }}</a>
+<div class="home-speakers ws-reveal">
+  {% for speaker in site.data.speakers %}
+    <div class="home-speaker-card">
+      {% if speaker.photo and speaker.photo != "" %}
+        <img class="home-speaker-photo" src="{{ speaker.photo | prepend: '/assets/img/speakers/' | relative_url }}" alt="{{ speaker.name }}" />
       {% else %}
-        {{ speaker.name }}
+        {% assign parts = speaker.name | split: ' ' %}
+        <div class="home-speaker-placeholder">{{ parts[0] | slice: 0 }}{{ parts.last | slice: 0 }}</div>
       {% endif %}
+      <div class="home-speaker-name">
+        {% if speaker.website and speaker.website != "" %}
+          <a href="{{ speaker.website }}" target="_blank">{{ speaker.name }}</a>
+        {% else %}
+          {{ speaker.name }}
+        {% endif %}
+      </div>
+      <div class="home-speaker-aff">{{ speaker.affiliation }}</div>
     </div>
-    <div class="home-speaker-aff">{{ speaker.affiliation }}</div>
-  </div>
-{% endfor %}
+  {% endfor %}
 </div>
 
 <p class="home-section-link">
@@ -191,7 +153,7 @@ selected_papers: false
 
 ### Key Dates
 
-<div class="key-dates">
+<div class="key-dates ws-reveal">
   <div class="date-card">
     <div class="date-label">Submission deadline</div>
     <div class="date-value">TBA</div>
@@ -214,27 +176,29 @@ selected_papers: false
 
 ### Organizers
 
-<div class="home-organizers">
-{% for organizer in site.data.organizers %}
-  <div class="org-card">
-    {% if organizer.photo and organizer.photo != "" %}
-      <img class="org-photo" src="{{ organizer.photo | prepend: '/assets/img/organizers/' | relative_url }}" alt="{{ organizer.name }}" />
-    {% else %}
-      {% assign parts = organizer.name | split: ' ' %}
-      <div class="org-placeholder">{{ parts[0] | slice: 0 }}{{ parts.last | slice: 0 }}</div>
-    {% endif %}
-    <div class="org-name">
-      {% if organizer.website and organizer.website != "" %}
-        <a href="{{ organizer.website }}" target="_blank">{{ organizer.name }}</a>
+<div class="home-organizers ws-reveal">
+  {% for organizer in site.data.organizers %}
+    <div class="org-card">
+      {% if organizer.photo and organizer.photo != "" %}
+        <img class="org-photo" src="{{ organizer.photo | prepend: '/assets/img/organizers/' | relative_url }}" alt="{{ organizer.name }}" />
       {% else %}
-        {{ organizer.name }}
+        {% assign parts = organizer.name | split: ' ' %}
+        <div class="org-placeholder">{{ parts[0] | slice: 0 }}{{ parts.last | slice: 0 }}</div>
       {% endif %}
+      <div class="org-name">
+        {% if organizer.website and organizer.website != "" %}
+          <a href="{{ organizer.website }}" target="_blank">{{ organizer.name }}</a>
+        {% else %}
+          {{ organizer.name }}
+        {% endif %}
+      </div>
+      <div class="org-aff">{{ organizer.affiliation }}</div>
     </div>
-    <div class="org-aff">{{ organizer.affiliation }}</div>
-  </div>
-{% endfor %}
+  {% endfor %}
 </div>
 
 ### Code of Conduct
 
-We are committed to a respectful, inclusive, and constructive workshop environment for all participants. You can **confidentially** contact [Eduardo Sebastian](mailto:es2121@cam.ac.uk) for any concerns during the workshop.
+<div class="workshop-content-card ws-coc-card">
+  <p markdown="span">We are committed to a respectful, inclusive, and constructive workshop environment for all participants. You can **confidentially** contact [Eduardo Sebastian](mailto:es2121@cam.ac.uk) for any concerns during the workshop.</p>
+</div>
